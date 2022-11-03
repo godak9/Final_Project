@@ -1,0 +1,7 @@
+index,Case Number,Date,Month,Day,Year,Type,Country,Activity,Number of Victims ,Sex,Injury,Fatal (Y/N),Species
+0,2020.02.05,5-Feb-20,2,5,2020,Unprovoked,USA,Stand-Up Paddle boarding,I,U,N,N,Tiger
+1,2020.01.30.R, 30-Jan-2020,1,30,2020,Provoked,BAHAMAS,Floating,I,F,Y,N,Unknown
+2,2020.01.17,17-Jan-20,1,17,2020,Unprovoked,AUSTRALIA,Surfing,I,M,Y,N,Unknown
+3,2020.01.16,16-Jan-20,1,16,2020,Unprovoked,NEW ZEALAND,Surfing,I,F,Y,N,Broad_Nose_Seven_Gill
+4,2020.01.13,13-Jan-20,1,13,2020,Unprovoked,USA,Surfing,I,M,Y,N,Unknown
+7,2020.01.05,5-Jan-20,1,5,2020,Unprovoked,AUSTRALIA,Scuba diving,I,M,Y,Y,Great_White
