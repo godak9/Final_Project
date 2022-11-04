@@ -1,0 +1,5 @@
+*Removed rows that had a null value for case number
+
+*Removed header of the tables
+
+* Removed all commas and quotes from fatalities.csv (Kept giving errors)

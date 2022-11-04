@@ -1,0 +1,79 @@
+CREATE TABLE Activity (
+     Case_Number VARCHAR(30) NOT NULL,
+     Activity VARCHAR(50) NOT NULL,
+     PRIMARY KEY (Case_Number),
+     UNIQUE (Case_Number)
+    );
+CREATE TABLE Species (
+     Case_Number VARCHAR(30) NOT NULL,
+     Species VARCHAR(50) NOT NULL,
+     PRIMARY KEY (Case_Number),
+     UNIQUE (Case_Number)
+    );
+
+CREATE TABLE Type (
+     Case_Number VARCHAR(30) NOT NULL,
+     Type VARCHAR(50) NOT NULL,
+     PRIMARY KEY (Case_Number),
+     UNIQUE (Case_Number)
+    );
+
+CREATE TABLE Fatality (
+     Case_Number VARCHAR(30) NOT NULL,
+     Injury VARCHAR(400),
+     Name VARCHAR(400),
+     Type VARCHAR(200),
+     Fatal VARCHAR(3) NOT NULL,
+     PRIMARY KEY (Case_Number),
+     UNIQUE (Case_Number)
+    );
+
+CREATE TABLE Victimology (
+     Case_Number VARCHAR(30) NOT NULL,
+     People_Involved VARCHAR(15) NOT NULL,
+     Sex VARCHAR(3) NOT NULL,
+     Original_Name VARCHAR(400),
+     PRIMARY KEY (Case_Number),
+     UNIQUE (Case_Number)
+    );
+
+CREATE TABLE Location (
+     Case_Number VARCHAR(30) NOT NULL,
+     Country VARCHAR(3) NOT NULL,
+     PRIMARY KEY (Case_Number),
+     UNIQUE (Case_Number)
+    );
+
+CREATE TABLE Date (
+     Case_Number VARCHAR(30) NOT NULL,
+     Date varchar(60) NOT NULL,
+     Year varchar(20) NOT NULL,
+     Month varchar(20) NOT NULL,
+     Day varchar(20) NOT NULL,
+     PRIMARY KEY (Case_Number),
+     UNIQUE (Case_Number)
+    );
+
+CREATE TABLE 
+CompleteData
+AS
+SELECT
+Activity.Case_Number,
+Date.Year,
+Date.Month,
+Date.Day,
+Location.Country,
+Activity.Activity,
+Species.Species,
+Type.Type,
+Victimology.People_Involved,
+Victimology.Sex,
+Fatality.Fatal
+FROM
+Activity
+LEFT JOIN Species ON Species.Case_Number = Activity.Case_Number
+LEFT JOIN Type ON Type.Case_Number = Activity.Case_Number
+LEFT JOIN Date ON Date.Case_Number = Activity.Case_Number
+LEFT JOIN Location ON Location.Case_Number = Activity.Case_Number
+LEFT JOIN Fatality ON Fatality.Case_Number = Activity.Case_Number
+LEFT JOIN Victimology ON Victimology.Case_Number = Activity.Case_Number
