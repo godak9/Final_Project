@@ -1,5 +1,5 @@
 # Some notes on the changes made to the clean data files before importing
-# The original files can be found in the "Cleaning_Data/ Clean_Data_Files" folder
+# The original files can be found in the "Data_Cleaning/ Clean_Data_Files" folder
 # The files with the changes below can be found in the "Database_Creation/Imported_Files" folder 
 * Removed rows that had a null value for case number
 
