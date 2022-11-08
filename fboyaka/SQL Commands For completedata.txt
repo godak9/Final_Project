@@ -80,4 +80,6 @@ LEFT JOIN Location ON Location.Case_Number = Activity.Case_Number
 LEFT JOIN Fatality ON Fatality.Case_Number = Activity.Case_Number
 LEFT JOIN Victimology ON Victimology.Case_Number = Activity.Case_Number
 
+ALTER TABLE CompleteData ADD PRIMARY KEY (Case_Number);
+
 #The table created was saved as a csv file in the "Database_Creation/Exported_Files" folder
