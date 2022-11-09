@@ -1,10 +1,10 @@
 # Final_Project
-# Segement 1
 Team Members Names 
 - Eric Bartlow
 - Florian Boyaka
 - Gaby Odak
 ## Presentation 
+A [slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) was created using Google Slides
 ### Selected Topic 
 Finding factors that contribute the most to fatal shark attacks. Creating a machine learning model that can predict fatal shark attacks. I think we should use a Classification model of some sort. I would like to use an ensemble learning model, but this may change. Once the data is cleaned and encoded, we can set up multiple models and compare the results 
 ### Reasons for Selecting Topic
