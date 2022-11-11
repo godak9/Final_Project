@@ -24,15 +24,19 @@ We found an interesting dataset on shark bite instances that is described furthe
 - Are individuals or groups more susceptible to a fatal injury?
 - Do provoked attacks lead to a more fatalities?
 
-### Analysis Roadmap
+## Analysis Roadmap
 This project was broken down into three main parts:
 1. Data ETL
    - Data cleaning and transformation
-     - Technologies used: Python (mainly Pandas) in Jupyter Notebook
-     - Raw data can be found in the [Data_Cleaning/Raw_Data_Files/ folder](Data_Cleaning/Raw_Data_Files)
-     - Code for cleaning can be found in the [Data_Cleaning/Data_Cleaning_Code/ folder](Data_Cleaning/Data_Cleaning_Code/)
-     - Cleaned data files can be found in the [Data_Cleaning/Clean_Data_Files/ folder](Data_Cleaning/Clean_Data_Files)
+     - Technology/Language used: Python (mainly Pandas) in Jupyter Notebook
+     - [Raw data files](Data_Cleaning/Raw_Data_Files) can be found in the  Data_Cleaning/Raw_Data_Files/ folder.
+     - [Code for cleaning](Data_Cleaning/Data_Cleaning_Code) can be found in the Data_Cleaning/Data_Cleaning_Code/ folder.
+     - [Cleaned data files](Data_Cleaning/Clean_Data_Files) can be found in the Data_Cleaning/Clean_Data_Files/ folder.
    - Database creation
+     - Technology/Language used: PostgreSQL in pgAdmin
+     - [Code for database creation](Database_Creation/SQL_Code/SQL_Commands_For_completedata.txt) can be found in the Database_Creation/SQL_Code/ folder.
+     - [Notes on database creation and importing/exporting files](Database_Creation/SQL_Code/Data_Notes.txt) can be found in the Database_Creation/SQL_Code/ folder.
+     - [Imported files](Database_Creation/Imported_Files) and [exported files](Database_Creation/Exported_Files) can be found in the Database_Creation/Imported_Files/ and Database_Creation/Exported_Files/ folders, relatively.
    
 2. Machine Learning
    - Exploratory analysis
