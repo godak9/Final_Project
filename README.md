@@ -1,14 +1,44 @@
-# Final_Project
+# Final Project: Predicitng Fatal Shark Bites
 Team Members Names 
 - Eric Bartlow
 - Florian Boyaka
 - Gaby Odak
+
 ## Presentation 
-A [slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) was created using Google Slides
-### Selected Topic 
-Finding factors that contribute the most to fatal shark attacks. Creating a machine learning model that can predict fatal shark attacks. I think we should use a Classification model of some sort. I would like to use an ensemble learning model, but this may change. Once the data is cleaned and encoded, we can set up multiple models and compare the results 
+A [slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) was created using Google Slides and provides a descirption of the project process and project insights.
+
+## Selected Topic 
+The occurances of a shark bite is considered a random event, [and unfortunately not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). This project dives deeper into the above statement and explores and possibility of a shark bite not being a random event at all. Now, predicting if shark bites in general are random events was a very broad topic to take on with just three people. So, we narrowed the scope of this topic to asking whether or not __fatal__ shark attacks are truly random events.
+
 ### Reasons for Selecting Topic
-The data was interesting considering it has records from the B.C era. This could give some insight into beach saftey by avoiding found factors that lead to fatal sharks (like avoiding  the water if a certain type of shark was spotted there recently, take caution when performing certain activities in certain parts of the world).
+We found an interesting dataset on shark bite instances that is described further in the _Description of Data_ section below. Getting bite by a shark is completely based fear becasue of its unpredictability and its potential lethality. We want to quell that that fear in ourselves and others by narrowing down on factors involved in fatal attacks so we can take more caution when we experience those factors in or around the ocean.
+
+### Questions to Answer
+#### Main Questions
+- Can we use machine learning to predict fatal shark attacks based on the where, when, how, and who?
+- Do certain features have a greater impact when it comes to predicting a fatal shark bite?\
+#### Supporting Questions
+- Is one species of shark more deadly than the others?
+- Are you more susceptible susceptible to a fatal injury where performing a certain ocean activity?
+- Are men or women more susceptible to a fatal injury?
+- Are individuals or groups more susceptible to a fatal injury?
+- Do provoked attacks lead to a more fatalities?
+
+### Analysis Roadmap
+This project was broken down into three main parts:
+1. Data ETL
+   - Data cleaning and transformation
+     - Technologies used: Python (mainly Pandas) in Jupyter Notebook
+     - Raw data can be found in the [Data_Cleaning/Raw_Data_Files/ folder](Data_Cleaning/Raw_Data_Files)
+     - Code for cleaning can be found in the [Data_Cleaning/Data_Cleaning_Code/ folder](Data_Cleaning/Data_Cleaning_Code/)
+     - Cleaned data files can be found in the [Data_Cleaning/Clean_Data_Files/ folder](Data_Cleaning/Clean_Data_Files)
+   - Database creation
+   
+2. Machine Learning
+   - Exploratory analysis
+
+3. 
+
 ### Description of Data 
 From kaggle https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit
 romShark Research Institute's website https://www.sharkattackfile.net/incidentlog.htm
@@ -27,15 +57,6 @@ Columns:
 - Injury: Right now it is a mess and we narrowed it down to either "Y" for injury or "N" for no injury. I think we will change this to be a scale where 0 is no injury, 1 is a mild injury(sratches, bruises), 2 is a moderate injury(lacerations), 3 is a severe injury (limbs bitten off), and 4 is a fatal injury. Clearly, this column is repetative for fatality predicition, but it could contain good data for presentation purposes.
 - Fatal(Y/N): This is our target variable. This will be encoded for machine leanring.
 - Species: We will make dummies from this column for the machine learning process. I predict that species of shark will have a high impact on fatality. If every specieis is made into its own individual feature we could point to which shark is the most deadly.
-### Questions to Answer
-- Is one species of shark more deadly than the others?
-- Are you more susceptible susceptible to a fatal injury where performing a certain ocean activity?
-- Are men or women more susceptible to a fatal injury?
-- Are individuals or groups more susceptible to a fatal injury?
-- Do provoked attacks lead to a more fatalities?
-I'm sure more questions will come up along the way, and we may find answers to questions that we didn't think to initially ask, but these are the top five questions that come to mind for now. 
-## Communication protocols
-So far, Florian, Eric and I have done great job keeping in touch and communicating ideas. We primarily use Slack for communication and we have gotten together on Zoom almost every day. There is fluid written and verbal communicaiton between us.
-The only protocol we have in place is that if one of us does not answer in Slack for a few days, we will move on without them. Things come up, it is understandable, so we will try our best to fill the person in when they are able to come back. However, we cannot put a hold on the entire project for one person. 
+
 
 
