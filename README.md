@@ -5,7 +5,7 @@ Team Members Names
 - Gaby Odak
 
 ## Presentation 
-A [slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) was created using Google Slides and provides a descirption of the project process and project insights.
+A [slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) was created using Google Slides and provides a descirption of the project process and project insights. These slides will also contain links to exploratory analysis and a dashboard presentation hosted through Tablaeu Public (also linked below).
 
 ## Selected Topic 
 The occurances of a shark bite is considered a random event, [and unfortunately not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). This project dives deeper into the above statement and explores and possibility of a shark bite not being a random event at all. Now, predicting if shark bites in general are random events was a very broad topic to take on with just three people. So, we narrowed the scope of this topic to asking whether or not __fatal__ shark attacks are truly random events.
@@ -37,12 +37,20 @@ This project was broken down into three main parts:
      - [Code for database creation](Database_Creation/SQL_Code/SQL_Commands_For_completedata.txt) can be found in the Database_Creation/SQL_Code/ folder.
      - [Notes on database creation and importing/exporting files](Database_Creation/SQL_Code/Data_Notes.txt) can be found in the Database_Creation/SQL_Code/ folder.
      - [Imported files](Database_Creation/Imported_Files) and [exported files](Database_Creation/Exported_Files) can be found in the Database_Creation/Imported_Files/ and Database_Creation/Exported_Files/ folders, relatively.
-   
 2. Machine Learning
    - Exploratory analysis
+     - Technology/Language used: Tableau Public
+     - A [storyboard presentation](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis) can be found on Tableau Pubic
+   - Data encoding
+   - Comparing validation of machine learning models
+   - Choosing a machine learning model
+3. Presentation
+   - Slideshow presentation
+   - Dashboard presentation
 
-3. 
 
+
+# WE NEED TO CLEAN THIS SECTION UP A BIT
 ### Description of Data 
 From kaggle https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit
 romShark Research Institute's website https://www.sharkattackfile.net/incidentlog.htm
