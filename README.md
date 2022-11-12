@@ -54,7 +54,8 @@ This project was broken down into three main parts:
 ### Description of Data 
 From kaggle https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit
 romShark Research Institute's website https://www.sharkattackfile.net/incidentlog.htm
-This is data collected on around 6,500 instances of reported shark attacks. Looking through the data, not all instances were actually shark attacks. When these were removed it was narrowed down to 5,935 instances. Right off the bat we removed the Unamed Columns 22-255 because there are no values in these columns. We also removed "Time", "Investigator or Source", "pdf", "href formula", "href", "Case Number 1", "Case Number 2" becasue these columns were not relevant for our analysis. "Area" and "Location" has values that were all over the place so those were also removed. "Age" was removed becasue there were too many missing values 
+This is data collected on 6,462 instances of reported shark attacks. When looking through the data, we discovered not all instances were actually shark attacks. When these were removed it was narrowed down to 5,935 instances. We removed the Unamed Columns 22-255 because there are no values in these columns. We also removed "Time", "Investigator or Source", "pdf", "href formula", "href", "Case Number 1", "Case Number 2" becasue these columns were not relevant for our analysis. "Area" and "Location" has values that were all over the place so those were also removed. "Age" was removed because there were too many missing values.
+
 Columns: 
 - Index: Unqiue identifier for each row.
 - Case Number: Used to set up "Month" and "Day" columns and to cross reference the "Date" and "Year" column, but it will not be used in the machine learning model.
@@ -62,7 +63,7 @@ Columns:
 - Day: Present in the mock data, will require manipulation to add this column for the real dataset. Will be used in the machine learning model.
 - Month: Present in the mock data, will require manipulation to add this column for the real dataset. Will be used in the machine learning model.
 - Year: Needs to be cross referenced with the "Date" and "Case Number" column.  Will be used in the machine learning model.
-- Country: Will create labels for the top five countries (USA, AUSTRALIA, SOUTH AFRICA, PAPUA NEW GUINEA, NEW ZEALAND) and the other countries will be grouped under label. We will make dummies from these variables for the machine learning model.
+- Country: Created labels for the top five countries (USA, AUSTRALIA, SOUTH AFRICA, PAPUA NEW GUINEA, NEW ZEALAND) and the other countries will be grouped under label. We will make dummies from these variables for the machine learning model.
 - Activity: This column will need to be cleaned and labels will need to be created for the various different acitvites. We will make dummies from these variables for the machine learning model.
 - Name: The original data is being used to fill in "Unnamed 9" which we renmaed "Sex". The "Name" column will be renamed "Number of Victims" and have the label "I" for individual "M" for multiple of "U" for unknown. We will make dummies from these variables for the machine learning model.
 - Sex: Rennamed from "Unnamed: 9", either "M" for male, "F" for female, or "U" for unknown. We will make dummies from these variables for the machine learning model.
