@@ -1,8 +1,9 @@
 # Final Project: Predicitng Fatal Shark Bites
 Team Members Names 
+- Gaby Odak
 - Eric Bartlow
 - Florian Boyaka
-- Gaby Odak
+
 
 ## Presentation 
 A [slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) was created using Google Slides and provides a descirption of the project process and project insights. These slides will also contain links to exploratory analysis and a dashboard presentation hosted through Tablaeu Public (also linked below).
