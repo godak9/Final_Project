@@ -46,7 +46,7 @@ This project was broken down into three main parts:
    - Comparing validation of machine learning models
    - Choosing a machine learning model
 3. Presentation
-   - Slideshow presentation
+   - [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit?usp=sharing)
    - Dashboard presentation
 
 
