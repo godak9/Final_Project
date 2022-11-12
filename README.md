@@ -53,7 +53,7 @@ This project was broken down into three main parts:
    - [Fatal Shark Bites Tableau story](link, but we don't have one yet)
 
 ## Description of Data
-The [dataset was originally sourced](Shark Research Institute's website https://www.sharkattackfile.net/incidentlog.htm) from the Shark Research Institute's website. We came across the [dataset on Kaggle](https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit) where someone had already extracted the dataset and created a new file from it. However, even the extracted dataset still required a lot of cleaning before any machine learning was conducted. 
+The [dataset was originally sourced](website https://www.sharkattackfile.net/incidentlog.htm) from the Shark Research Institute's. We came across the [dataset on Kaggle](https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit) where someone had already extracted the dataset and created a new file from it. However, even the extracted dataset still required a lot of cleaning before any machine learning was conducted. 
 
 The data showed 6,462 instances of reported shark bites. When looking through the data, we discovered that not all instances were actually shark bites (i.e. misreporting or the bite was concluded to be from a differnt sea creature). This information was found in the Species column of the extracted dataset. When these rows were removed, the dataset was narrowed down to 5,935 instances. The dataframe created after this cleaning was exported as a csv file and used as the [confirmed dataset for all other cleaning](
 
