@@ -56,7 +56,7 @@ From kaggle https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risk
 romShark Research Institute's website https://www.sharkattackfile.net/incidentlog.htm
 This is data collected on around 6,500 instances of reported shark attacks. Looking through the data, not all instances were actually shark attacks. When these were removed it was narrowed down to 5,935 instances. Right off the bat we removed the Unamed Columns 22-255 because there are no values in these columns. We also removed "Time", "Investigator or Source", "pdf", "href formula", "href", "Case Number 1", "Case Number 2" becasue these columns were not relevant for our analysis. "Area" and "Location" has values that were all over the place so those were also removed. "Age" was removed becasue there were too many missing values 
 Columns: 
-- Index: We will keep this as the unqiue idnetifier for each row  
+- Index: We will keep this as the unqiue identifier for each row  
 - Case Number: We may use this to use this to set up "Month" and "Day" columns and to cross reference the "Date" and "Year" column, but it will not be used in the machine learning model
 - Date: We will not be using this in the machine learning model, but it is useful for cross reference when adding data to other columns.
 - Day: Present in the mock data, will require manipulation to add this column for the real dataset. Will be used in the machine learning model.
