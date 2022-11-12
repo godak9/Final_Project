@@ -56,9 +56,9 @@ From kaggle https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risk
 romShark Research Institute's website https://www.sharkattackfile.net/incidentlog.htm
 This is data collected on around 6,500 instances of reported shark attacks. Looking through the data, not all instances were actually shark attacks. When these were removed it was narrowed down to 5,935 instances. Right off the bat we removed the Unamed Columns 22-255 because there are no values in these columns. We also removed "Time", "Investigator or Source", "pdf", "href formula", "href", "Case Number 1", "Case Number 2" becasue these columns were not relevant for our analysis. "Area" and "Location" has values that were all over the place so those were also removed. "Age" was removed becasue there were too many missing values 
 Columns: 
-- Index: We will keep this as the unqiue identifier for each row  
-- Case Number: We may use this to use this to set up "Month" and "Day" columns and to cross reference the "Date" and "Year" column, but it will not be used in the machine learning model
-- Date: We will not be using this in the machine learning model, but it is useful for cross reference when adding data to other columns.
+- Index: Unqiue identifier for each row.
+- Case Number: Used to set up "Month" and "Day" columns and to cross reference the "Date" and "Year" column, but it will not be used in the machine learning model.
+- Date: Useful for cross reference when adding data to other columns. Will not be used in the machine learning model. 
 - Day: Present in the mock data, will require manipulation to add this column for the real dataset. Will be used in the machine learning model.
 - Month: Present in the mock data, will require manipulation to add this column for the real dataset. Will be used in the machine learning model.
 - Year: Needs to be cross referenced with the "Date" and "Case Number" column.  Will be used in the machine learning model.
@@ -66,9 +66,6 @@ Columns:
 - Activity: This column will need to be cleaned and labels will need to be created for the various different acitvites. We will make dummies from these variables for the machine learning model.
 - Name: The original data is being used to fill in "Unnamed 9" which we renmaed "Sex". The "Name" column will be renamed "Number of Victims" and have the label "I" for individual "M" for multiple of "U" for unknown. We will make dummies from these variables for the machine learning model.
 - Sex: Rennamed from "Unnamed: 9", either "M" for male, "F" for female, or "U" for unknown. We will make dummies from these variables for the machine learning model.
-- Injury: Right now it is a mess and we narrowed it down to either "Y" for injury or "N" for no injury. I think we will change this to be a scale where 0 is no injury, 1 is a mild injury(sratches, bruises), 2 is a moderate injury(lacerations), 3 is a severe injury (limbs bitten off), and 4 is a fatal injury. Clearly, this column is repetative for fatality predicition, but it could contain good data for presentation purposes.
-- Fatal(Y/N): This is our target variable. This will be encoded for machine leanring.
-- Species: We will make dummies from this column for the machine learning process. I predict that species of shark will have a high impact on fatality. If every specieis is made into its own individual feature we could point to which shark is the most deadly.
-
-
-
+- Injury: Narrowed it down to either "Y" for injury or "N" for no injury. Might be changed later to a scale where 0 is no injury, 1 is a mild injury(sratches, bruises), 2 is a moderate injury(lacerations), 3 is a severe injury (limbs bitten off), and 4 is a fatal injury. Clearly, this column is repetative for fatality predicition, but it could contain good data for presentation purposes.
+- Fatal(Y/N): Our target variable. Will be encoded for machine leanring.
+- Species: Made dummies from this column for the machine learning process. I predict that species of shark will have a high impact on fatality. If every specieis is made into its own individual feature we could point to which shark is the most deadly.
