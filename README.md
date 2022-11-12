@@ -51,7 +51,6 @@ This project was broken down into three main parts:
 
 
 
-# WE NEED TO CLEAN THIS SECTION UP A BIT
 ### Description of Data 
 From kaggle https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit
 romShark Research Institute's website https://www.sharkattackfile.net/incidentlog.htm
