@@ -41,16 +41,18 @@ This project was broken down into three main parts:
 2. Machine Learning
    - Exploratory analysis
      - Technology/Language used: Tableau Public
-     - A [storyboard presentation](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis) can be found on Tableau Pubic
+     - A [Shark Bite Exploratory Analysis story](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis) can be found on Tableau Pubic
    - Data encoding
      - [Code for encoding data for machine learning](Machine_Learning/Machine_Learning_Data_Encoding.ipynb) can be found in the Machine_Learning folder and at the top of files where mahcine learning models were ran.
    - Comparing validation of machine learning models
+     - Technology/Language used: Python (Scikit-learn) in Jupyter Notebook
      - [Code for comparing machine learning models](Machine_Learning/Comparing_ML_Models.ipynb) can be found in the Machine_Learning folder.
    - Choosing a machine learning model
      - [Code for the selected machine learning model](Machine_Learning/Chosen_Model.ipynb) can be found in the Machine_Learning folder.
 3. Presentation
+   - Technology used: Google Slides and Tableau Public
    - [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit?usp=sharing)
-   - [Fatal Shark Bites Tableau story](link, but we don't have one yet)
+   - [Fatal Shark Bites story](link, but we don't have one yet)
 
 ## Description of Data
 The [dataset was originally sourced](https://www.sharkattackfile.net/incidentlog.htm) from the Shark Research Institute's. We came across the [dataset on Kaggle](https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit) where someone had already extracted the dataset and created a new file from it. However, even the extracted dataset still required a lot of cleaning before any machine learning was conducted. 
@@ -75,18 +77,18 @@ Next, we removed columns not relevant to our analysis. The Unamed Columns 22-255
 - _Fatal_: The column was the target column in the machine learning model. Transformed so that each row contained a value either Y for yes or N for N. Missing values were extracted from information contained in the Injury, Type, Name columns after being cross referenced on the internet.
 
 ### Database 
-The columns above were seperated before being cleaned and saved to csv files with the unqiue identifier column, Case Number. The data was loaded into pgAdmin where we hosted a database and joined the cleaned data on the Case Number column. This table was also exported as a csv file so we could perform exploratory analysis in Tablaeu before the creating machine learning models. 
+The columns above were seperated before being cleaned and saved to csv files with the unqiue identifier column, Case Number. The data was loaded into pgAdmin where we hosted a database and joined the cleaned data on the Case Number column. This table was also exported as a csv file so we could perform exploratory analysis.
 
 ## Machine Learning
-Before creating any machine learning models, we began with an exploratory analysis of the cleaned data in Tablaue. After exploration, we decided to drop the Day, Year, and Name columns becasue they proved irrelevant to answering our inital questions. Then, we loaded the joined cleaned data table from pgAdmin into a Pandas dataframe where we dropped any row that contained null values. With no null rows, we encoded the data using the Pandas .get_dummies() method. _The encoded machine learning dataset contained 5,056 rows of data, 126 feature columns, and the Fatal target column_.
+Before creating any machine learning models, we began with an exploratory analysis of the cleaned data in Tableau. After exploration, we decided to drop the Day, Year, and Name columns becasue they proved irrelevant to answering our inital questions. Then, we loaded the joined cleaned data table from pgAdmin into a Pandas dataframe where we dropped any row that contained null values. With no null rows, we encoded the data using the Pandas .get_dummies() method. _The encoded machine learning dataset contained 5,056 rows of data, 126 feature columns, and the Fatal target column_.
 ### Comparing Classification Models
-From the beginning of the project we realized predicting a fatal shark attack would be a classification problem. We compared four classification models where we consistently kept the random_state=1 :
+From the beginning of the project we realized predicting a fatal shark attack would be a classification problem. For this We compared four classification models where we consistently kept the random_state=1 :
    1. Simple Logistic Regression using SMOTEENN resampling
    2. Easy Ensemble AdaBoost Classifier Model
    3. Random Forest Classifier Model
    4. Gradient Boosting Model
 ### Choosing the Best Model
-When deciding on the best model we judged two validation scores: Accuracy and Recall. We were looking for a model with output sensitive predictions where we could cover false negatives. We thought that it was better to label a non-fatal shark bite as fatal than labeling a fatal shark bite as non-fatal. Ater judging these scores across models we decided the Gradient Boosting Model worked best for this problem. However, we gained valuable insights from the Random Forest Classifier Model after generating a list of feature importances and seeing which features had the most impact when classifying. 
+When deciding on the best model we judged two validation scores: Accuracy and Recall. We were looking for a model with output sensitive predictions where we could cover false negatives. We thought that it was better to label a non-fatal shark bite as fatal than labeling a fatal shark bite as non-fatal. Ater judging these scores across models we decided the Gradient Boosting Model worked best for this problem. However, we gained valuable insights from the Random Forest Classifier Model after generating a list of feature importances and seeing which import features had largest effects on the classifier when predicting a certain variable.
 #### Gradient Boosting Model
 We tried various combinations of n_estimators, learning_rates, and max_features until we landed on the combination that generated the highest accuracy and recall score. Below is the code for out model instance: 
 ```
@@ -97,8 +99,13 @@ GB_classifier = GradientBoostingClassifier(n_estimators=100,
                                         random_state=1)
 ```
 This model generated an almost 84% accuracy and a 84% recall score.
+
 ![Screen Shot 2022-11-12 at 2 46 36 AM](https://user-images.githubusercontent.com/104794100/201463433-8f0ee1a0-88a8-42b2-a79a-fa1e6e81c7ba.png)
 
 ## Project Insights
-Although our machine learning model was not perfect, we can say that fatal shark attacks are far from simply random. There are certain factors that contribute to the predictability of fatal shark attacks. Follow the link to our [Fatal Shark Bites Tableau story](link, but we don't have one yet) to see what those factors are.
+Although our machine learning model was not perfect, we can say that fatal shark attacks are far from simply random. There are certain factors that contribute to the predictability of fatal shark bites. We used the list of feature importances generated from the Random Forest model to pin-point features with the greatest effect on the model. 
+
+![Screen Shot 2022-11-12 at 1 02 11 PM](https://user-images.githubusercontent.com/104794100/201488281-5dbf1a49-0d16-4685-8565-e9be734bb019.png)
+
+However, one drawback of using feature importance is that the function does not specify which varaible the feature has an effect on the model predicitng. So, we used Tableau Public to visual the outcomes and determine if the features had more effect on the model predicitng Y, fatal attacks, or N, non-fatal attacks. Follow the link to our [Fatal Shark Bites Tableau story](link, but we don't have one yet) to see which features have the greatest effect on the model and predicitng fatal shark bites.
                                         
