@@ -9,6 +9,9 @@ Team Member Names:
 - [Tableau story of exploratory analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis).
 - [Tableau story of machine learning analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory) 
 
+## Running Project Code
+The requirements for the environment in which the project code was ran can be found in the [requirements.txt file](requirements.txt).
+
 ## Selected Topic
 Experiencing a shark bite is considered a random occurrence [and, unfortunately, not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). We want to dive deeper into the randomness of shark bites and explore the possibility of predicting shark bite fatalities with classifier models. To explore this question, we decided to compare machine learning models built using Python's Scikit-learn library.
 ### Reasons for Selecting Topic
