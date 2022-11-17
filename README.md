@@ -7,7 +7,7 @@ Team Member Names:
 ## Accessing Associated Project Presentations 
 - [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) containing a description of the project process and in depth project insights. 
 - [Tableau story of exploratory analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis).
-- [Tableau story of machine learning analysis](link, but we don't have it yet.) 
+- [Tableau story of machine learning analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory) 
 
 ## Selected Topic
 Experiencing a shark bite is considered a random occurrence [and, unfortunately, not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). We want to dive deeper into the randomness of shark bites and explore the possibility of predicting shark bite fatalities with classifier models. To explore this question, we decided to compare machine learning models built using Python's Scikit-learn library.
@@ -128,5 +128,5 @@ Although our machine learning model was not perfect, we can say that fatal shark
 
 ![Screen Shot 2022-11-12 at 1 02 11 PM](https://user-images.githubusercontent.com/104794100/201488281-5dbf1a49-0d16-4685-8565-e9be734bb019.png)
 
-However, one drawback of using feature importance is that the function does not specify which varaible the feature has an effect on the model predicitng. So, we used Tableau Public to visual the outcomes and determine if the features had more effect on the model predicitng Y, fatal attacks, or N, non-fatal attacks. Follow the link to our [Fatal Shark Bites Tableau story](link, but we don't have one yet) to see which features have the greatest effect on the model and predicitng fatal shark bites.
+However, one drawback of using feature importance is that the function does not specify which varaible the feature has an effect on the model predicitng. So, we used Tableau Public to visual the outcomes and determine if the features had more effect on the model predicitng Y, fatal attacks, or N, non-fatal attacks. Follow the link to our [Fatal Shark Bites Tableau story](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory) to see which features have the greatest effect on the model and predicitng fatal shark bites.
                                         
