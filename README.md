@@ -56,7 +56,7 @@ This project was broken down into three main parts:
 3. Presentation
    - Technology used: Google Slides and Tableau Public
    - [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit?usp=sharing)
-   - [Fatal Shark Bites story](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory)
+   - A [Fatal Shark Bites story](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory) exploring the machine learning model features can be found on Tableau Public.
 
 ## Description of Data
 The [dataset was originally sourced](https://www.sharkattackfile.net/incidentlog.htm) from the Shark Research Institute's website. We came across the [dataset on Kaggle](https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit) where someone had already extracted the dataset and created a new file from it. However, even the extracted dataset still required a lot of cleaning before we could fit the data to any machine learning models.
