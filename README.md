@@ -1,4 +1,4 @@
-# Final Project: Predicitng Fatal Shark Bites
+# Final Project: Predicting Fatal Shark Bites
 Team Member Names:
 - Gaby Odak
 - Eric Bartlow
