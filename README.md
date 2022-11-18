@@ -56,7 +56,7 @@ This project was broken down into three main parts:
 3. Presentation
    - Technology used: Google Slides and Tableau Public
    - [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit?usp=sharing)
-   - [Fatal Shark Bites story](link, but we don't have one yet)
+   - [Fatal Shark Bites story](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory)
 
 ## Description of Data
 The [dataset was originally sourced](https://www.sharkattackfile.net/incidentlog.htm) from the Shark Research Institute's website. We came across the [dataset on Kaggle](https://www.kaggle.com/datasets/thedevastator/shark-attacks-the-risks-of-coastal-water-activit) where someone had already extracted the dataset and created a new file from it. However, even the extracted dataset still required a lot of cleaning before we could fit the data to any machine learning models.
@@ -104,7 +104,11 @@ We made [minor changes](Database_Creation/SQL_Code/Data_Notes.txt) to the cleane
 - _Fatal_: Renamed from _Fatal (Y/N)_ in the initial cleaned dataset. This was the target column in the machine learning model. Transformed so that each row contained a value either Y for fatal or N for non-fatal. Missing values were extracted from information contained in the _Injury_, _Type_, and _Name_ columns in the initial cleaned dataset dataset and cross referenced on the internet.
 
 ## Machine Learning
-Before creating any machine learning models, we began with [an exploratory analysis of the cleaned data](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis) in Tableau. After exploration, we decided to drop the Day, Year, and Name columns becasue they proved irrelevant to answering our inital questions. Then, we loaded the joined cleaned data table from pgAdmin into a Pandas dataframe where we dropped all rows that contained null values. With no null rows, we [encoded the data](Machine_Learning/Machine_Learning_Data_Encoding.ipynb) using the Pandas .get_dummies() method. _The encoded machine learning dataset contained 5,056 shark bite instances, 126 feature columns, and the _Fatal_ target column_.
+Before creating any machine learning models, we began with [an exploratory analysis of the cleaned data](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis) in Tableau. After exploration, we decided to drop the Day, Year, and Name columns becasue they proved irrelevant to answering our inital questions. Then, we loaded the joined cleaned data table from pgAdmin into a Pandas dataframe where we dropped all rows that contained null values. With no null rows, we [encoded the data](Machine_Learning/Machine_Learning_Data_Encoding.ipynb) using the Pandas .get_dummies() method.
+
+_The encoded machine learning dataset contained 5,056 shark bite instances, 126 feature columns, and the _Fatal_ target column_.
+
+This data was split into training (75%) and testing(25%) sets. 
 ### Comparing Classification Models
 From the beginning of the project we realized predicting a fatal shark bite is a classification problem. We [compared four classification models using Python's Scikit-learn library modules](Machine_Learning/Comparing_ML_Models.ipynb) where we consistently kept the random_state=1:
    1. Simple Logistic Regression using SMOTEENN resampling
