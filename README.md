@@ -4,6 +4,21 @@ Team Member Names:
 - Eric Bartlow
 - Florian Boyaka
 
+## Selected Topic
+Experiencing a shark bite is considered a random occurrence [and, unfortunately, not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). We want to dive deeper into the randomness of shark bites and explore the possibility of predicting shark bite fatalities by using extracted global shark bite data and creating classifier models. Are certain features invovlved in a shark bite situation associated with more fatality? 
+
+Using Python's Scikit-learn library we created various machine learning models to explore predicting scenarios where a shark bite is fatal. We extracted data for the machine learning models from the Shark Research Institute's website and put it through extensive preprocessing and cleaning by way of curated categorization. The transformed data was hosted as a database and accessed using SQL Alchemy. 
+ 
+Finally, we used Tableau to create data visualizations and a dashboard to explore the data trends in connection to feature importances of the machine learning model.
+
+### Highlight of Technologies Used
+- Python 3.7, Jupyter Notebook 1.0
+  - pandas 1.4.2
+  - scikit-learn 1.0
+- SQL, pgAdmin 4
+  - psycopg2 2.9.5
+  - sqlalchemy 1.4
+
 ## Accessing Associated Project Presentations 
 - [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) containing a description of the project process and in depth project insights. 
 - [Tableau story of exploratory analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis).
@@ -12,10 +27,8 @@ Team Member Names:
 ## Running Project Code
 The requirements for the environment in which the project code was ran can be found in the [requirements.txt file](requirements.txt).
 
-## Selected Topic
-Experiencing a shark bite is considered a random occurrence [and, unfortunately, not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). We want to dive deeper into the randomness of shark bites and explore the possibility of predicting shark bite fatalities with classifier models. To explore this question, we decided to compare machine learning models built using Python's Scikit-learn library.
 ### Reasons for Selecting Topic
-We found an interesting dataset on shark bite instances that is described further in the _Description of Data_ section below. Getting bit by a shark is a completely based fear becasue of its unpredictability and its potential lethality. We want to quell that fear in ourselves and others by narrowing down on factors involved in fatal bites so we can take more caution when we experience those factors in or around the ocean to decrease fatalities.
+We found an interesting dataset on shark bite instances that is described further in the _Description of Data_ section below. Getting bit by a shark is a completely based fear becasue of its unpredictability and its potential lethality. Anyone would feel a sense of unease if they encountered a shark. Can we narrow down features frequently involved in fatal shark bites and predict our odds against these creatures using with machine learning?
 ### Questions to Answer
 #### Main Questions
 - Can we use machine learning models to predict fatal shark bites based on the where, when, how, and who features of the shark bite occurance?
