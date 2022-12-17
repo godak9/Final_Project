@@ -18,9 +18,10 @@ Finally, we used Tableau to create data visualizations and a dashboard to explor
 - SQL, pgAdmin 4
   - psycopg2 2.9.5
   - sqlalchemy 1.4
-  - 
+
 ### Reasons for Selecting Topic
 We found an interesting dataset on shark bite instances that is described further in the _Description of Data_ section below. Getting bit by a shark is a completely based fear becasue of its unpredictability and its potential lethality. Anyone would feel a sense of unease if they encountered a shark. Can we narrow down features frequently involved in fatal shark bites and predict what situations are more deadly with these creatures using machine learning?
+
 ### Questions to Answer
 #### Main Questions
 - Can we use machine learning models to predict fatal shark bites based on the where, when, how, and who features of the shark bite occurance?
