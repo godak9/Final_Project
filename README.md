@@ -5,7 +5,7 @@ Team Member Names:
 - Florian Boyaka
 
 ## Selected Topic
-Experiencing a shark bite is considered a random occurrence [and, unfortunately, not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). We want to dive deeper into the randomness of shark bites and explore the possibility of predicting shark bite fatalities by using extracted global shark bite data and creating classifier models. Are certain features invovlved in a shark bite situation associated with more fatality? 
+Experiencing a shark bite is considered a random occurrence [and, unfortunately, not often explainable](https://stories.uq.edu.au/contact-magazine/2019/fear-versus-reality/index.html). We want to dive deeper into the randomness of shark bites and explore the possibility of predicting shark bite fatalities by using extracted global shark bite data and creating classifier machine learning models. Are certain features invovlved in a shark bite situation associated with more fatality? 
 
 Using Python's Scikit-learn library we created various machine learning models to explore predicting scenarios where a shark bite is fatal. We extracted data for the machine learning models from the Shark Research Institute's website and put it through extensive preprocessing and cleaning by way of curated categorization. The transformed data was hosted as a database and accessed using SQL Alchemy. 
  
@@ -18,17 +18,9 @@ Finally, we used Tableau to create data visualizations and a dashboard to explor
 - SQL, pgAdmin 4
   - psycopg2 2.9.5
   - sqlalchemy 1.4
-
-## Accessing Associated Project Presentations 
-- [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) containing a description of the project process and in depth project insights. 
-- [Tableau story of exploratory analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis).
-- [Tableau story of machine learning analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory) 
-
-## Running Project Code
-The requirements for the environment in which the project code was ran can be found in the [requirements.txt file](requirements.txt).
-
+  - 
 ### Reasons for Selecting Topic
-We found an interesting dataset on shark bite instances that is described further in the _Description of Data_ section below. Getting bit by a shark is a completely based fear becasue of its unpredictability and its potential lethality. Anyone would feel a sense of unease if they encountered a shark. Can we narrow down features frequently involved in fatal shark bites and predict our odds against these creatures using with machine learning?
+We found an interesting dataset on shark bite instances that is described further in the _Description of Data_ section below. Getting bit by a shark is a completely based fear becasue of its unpredictability and its potential lethality. Anyone would feel a sense of unease if they encountered a shark. Can we narrow down features frequently involved in fatal shark bites and predict what situations are more deadly with these creatures using machine learning?
 ### Questions to Answer
 #### Main Questions
 - Can we use machine learning models to predict fatal shark bites based on the where, when, how, and who features of the shark bite occurance?
@@ -41,6 +33,14 @@ We found an interesting dataset on shark bite instances that is described furthe
 - Are individuals or groups more susceptible to a fatal injury?
 - Does the type of bite(i.e., provoked, unprovoked) play a role in fatality?
 - Is there a geographic association with fatal shark bites? 
+
+## Accessing Associated Project Presentations 
+- [Slideshow presentation](https://docs.google.com/presentation/d/1D5jMEY6qLNIQtL0yeWbthlBPU3TV16M7XuY5U8JGtFo/edit#slide=id.p) containing a description of the project process and in depth project insights. 
+- [Tableau story of exploratory analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteExploratoryAnalysis/ExploratoryAnalysis).
+- [Tableau story of machine learning analysis](https://public.tableau.com/app/profile/gabrijela.odak/viz/SharkBiteMachineLearningAnalysis/MachineLearningStory)
+
+## Running Project Code
+The requirements for the environment in which the project code was ran can be found in the [requirements.txt file](requirements.txt).
 
 ## Analysis Roadmap
 This project was broken down into three main parts:
